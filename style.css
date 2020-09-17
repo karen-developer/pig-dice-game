@@ -27,7 +27,7 @@ body {
 }
 
 .wrapper {
-    width: 950px;
+    width: 900px;
     height: 600px;
     position: absolute;
     top: 50%;
@@ -77,16 +77,15 @@ body {
     position: absolute;
     color: #EB4D4D;
     top: -7px;
-    left: 90%;
+    left: 95%;
 }
 
 .player-current-box {
     background-color: #EB4D4D;
     color: #fff;
     width: 40%;
-    top: 403px;
-    margin: 100px auto 500px;
-    padding: 12px;
+    margin: 100px auto 100px;
+    padding: 15px;
     text-align: center;
 }
 
@@ -136,7 +135,7 @@ i {
 
 .btn-new { top: 50px;}
 .btn-roll { top: 402px;}
-.btn-hold { top: 455px;}
+.btn-hold { top: 460px;}
 .btn-help {
     top: 550px;
     left: 97%;
