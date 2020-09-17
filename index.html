@@ -33,10 +33,14 @@
             <button class="btn-new"><i class="fas fa-gamepad"></i>New game</button>            
             <button class="btn-roll"><i class="fas fa-dice"></i>Roll dice</button>
             <button class="btn-hold"><i class="fas fa-pause-circle"></i>Hold</button>
+
+            <input type="text" placeholder="Winning score" class="winning-score">
+
             <!-- Trigger/Open The help -->
             <button id="helpBtn" class="btn-help"><i class="fas fa-question-circle"></i></button>
 
-            <img src="dice-5.png" alt="Dice" class="dice">
+            <img src="dice-5.png" alt="Dice" class="dice">             
+    
         </div>
                
         <!-- Help -->
@@ -48,9 +52,15 @@
                  <p>If the player rolls any other number, it is added to their turn total and the player's turn continues.</p>
                  <p>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</p>             
                  <p>The first player to score 100 or more points wins.</p>
+                 <p>(Or you can manually set the winning score.)</p>
             </div>
         </div>
        
+        <footer>  
+            <p>Copyright © 2020 Karen Chang</p>
+          </footer>
+
         <script src="app.js"></script>
+        
     </body>
 </html>

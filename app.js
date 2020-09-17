@@ -39,15 +39,26 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
 // HOLD
 document.querySelector('.btn-hold').addEventListener('click', function() {
     if (gamePlaying) {
-        // 1. Add CURRENT score to GLOBAL score
+        // Add CURRENT score to GLOBAL score
         scores[activePlayer] += roundScore;
 
-        // 2. Update the UI
-        document.getElementById('score-' + activePlayer).textContent = scores[activePlayer];
-
-        // 3. Check if player won the game
-        if (scores[activePlayer] >= 100) {
-            document.getElementById('name-' + activePlayer).innerHTML = '<i class="fas fa-trophy"></i>Winner!';
+        // Update the UI
+        document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
+        
+        var input = document.querySelector('.winning-score').value;
+        var winningScore;
+        
+        // Undefined, 0, null or "" are COERCED to false
+        // Anything else is COERCED to true
+        if(input) {
+            winningScore = input;
+        } else {
+            winningScore = 100;
+        }
+        
+        // Check if player won the game
+        if (scores[activePlayer] >= winningScore) {
+            document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
             document.querySelector('.dice').style.display = 'none';
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
             document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');

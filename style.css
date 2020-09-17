@@ -26,9 +26,16 @@ body {
     color: #555;
 }
 
+footer {
+    text-align: center;
+    color:white;
+    letter-spacing: 2px;
+    position: relative;
+    top: 800px;
+}
+
 .wrapper {
     width: 900px;
-    height: 600px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -55,7 +62,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 100;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 20px;
     position: relative;
 }
@@ -84,7 +91,7 @@ body {
     background-color: #EB4D4D;
     color: #fff;
     width: 40%;
-    margin: 100px auto 100px;
+    margin: 90px auto 10px;
     padding: 15px;
     text-align: center;
 }
@@ -133,11 +140,11 @@ i {
     transition: margin 0.3s;
 }
 
-.btn-new { top: 50px;}
-.btn-roll { top: 403px;}
-.btn-hold { top: 464px;}
+.btn-new { top: 60px;}
+.btn-roll { top: 407px;}
+.btn-hold { top: 470px;}
 .btn-help {
-    top: 550px;
+    top: 565px;
     left: 97%;
 }
 
@@ -157,6 +164,22 @@ i {
     color: #EB4D4D; 
     align-content: center;
 }
+
+.winning-score {
+    position: absolute;
+    left: 51%;
+    transform: translateX(-50%);
+    top: 530px;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    width: 180px;
+    text-transform: uppercase;
+}
+
+.winning-score:focus { outline: none; }
 
 /**********************************************
 *** HELP
@@ -202,3 +225,4 @@ i {
     text-decoration: none;
     cursor: pointer;
   }
+
