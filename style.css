@@ -28,7 +28,8 @@ body {
 
 .wrapper {
     width: 930px;
-    position: absolute;
+    height: 600px;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -41,7 +42,6 @@ body {
 .player-1-panel {
     width: 50%;
     float: left;
-    height: 600px;
     padding: 100px;
 }
 
