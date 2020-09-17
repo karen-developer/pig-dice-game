@@ -50,7 +50,7 @@ body {
 **********************************************/
 
 .player-name {
-    font-size: 36px;
+    font-size: 34px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -155,7 +155,7 @@ i {
 .winner { background-color: #f7f7f7; }
 .winner .player-name { 
     font-weight: 300; 
-    font-size: 36px;
+    font-size: 34px;
     color: #EB4D4D; 
     align-content: center;
 }
