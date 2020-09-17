@@ -46,7 +46,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         document.getElementById('score-' + activePlayer).textContent = scores[activePlayer];
 
         // 3. Check if player won the game
-        if (scores[activePlayer] >= 100) {
+        if (scores[activePlayer] >= 5) {
             document.getElementById('name-' + activePlayer).innerHTML = '<i class="fas fa-trophy"></i>Winner!';
             document.querySelector('.dice').style.display = 'none';
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
