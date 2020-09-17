@@ -68,6 +68,16 @@ body {
     margin-bottom: 90px;
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .player-name {
+      font-size: 30px;
+    }
+
+    .player-score {
+        font-size: 70px;
+      }
+  }
+
 .active { background-color: #f7f7f7; }
 .active .player-name { font-weight: 300; }
 
@@ -128,10 +138,9 @@ i {
     color: #EB4D4D;
     display: inline-block;
     margin-right: 15px;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1;
     vertical-align: text-top;
-    margin-top: -4px;
     transition: margin 0.3s;
 }
 
