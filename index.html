@@ -13,7 +13,7 @@
         
         <div class="wrapper clearfix">
             <div class="player-0-panel active">
-                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-name" id="name-0" contenteditable="true">Player 1</div>
                 <div class="player-score" id="score-0">43</div>
                 <div class="player-current-box">
                     <div class="player-current-label">Current</div>
@@ -22,7 +22,7 @@
             </div>
             
             <div class="player-1-panel">
-                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-name" id="name-1" contenteditable="true">Player 2</div>
                 <div class="player-score" id="score-1">72</div>
                 <div class="player-current-box">
                     <div class="player-current-label">Current</div>
@@ -39,24 +39,30 @@
             <!-- Trigger/Open The help -->
             <button id="helpBtn" class="btn-help"><i class="fas fa-question-circle"></i></button>
 
-            <img src="dice-5.png" alt="Dice" class="dice">             
+            <img src="dice-5.png" alt="Dice" class="dice" id="dice-1">
+            <img src="dice-5.png" alt="Dice" class="dice" id="dice-2">           
     
         </div>
                
         <div class="copyright">  
-            <p>Copyright © 2020 Karen Chang</p>
+            <a class="mysite" href="https://karen-developer.com" target="_blank">Copyright © 2020 Karen Chang <i class="fas fa-hand-point-left"></i></a>
         </div>
 
         <!-- Help -->
         <div id="help" class="help">
            <div class="help-content">
               <span class="close">&times;</span>
-                 <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":</p>
-                 <p>If the player rolls a 1, they score nothing and it becomes the next player's turn.</p>
-                 <p>If the player rolls any other number, it is added to their turn total and the player's turn continues.</p>
-                 <p>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</p>             
+                <h2>Game Rules</h2>                
+                 <p>Each turn, a player repeatedly rolls two dice until either a 1 is rolled or the player decides to "hold":</p>
+                 <ul>
+                 <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+                 <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+                 <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>             
+                </ul>                
                  <p>The first player to score 100 or more points wins.</p>
-                 <p>(Or you can manually set the winning score.)</p>
+                 <hr>
+                 <p> 🎲 You can manually set the WINNING SCORE.</p>
+                 <p> 🖌 You can click on PLAYER 1 or 2 to change their names.</p>
             </div>
         </div>       
 
