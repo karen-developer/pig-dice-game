@@ -40,7 +40,7 @@ hr {
     margin: 20px 0;
 }
 
-.copyright {
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,6 +53,7 @@ hr {
 
 .mysite {
     color:white;
+    font-weight: bold;
     text-decoration: none;
     transition: transform 0.3s ease-out;
 }
@@ -61,8 +62,14 @@ hr {
     transform: translateY(3px);
 }
 
-  .mysite i {
-    margin-top: -3px;
+.karen {
+    color: #eba1a1;
+}
+
+  .mysite i {    
+    font-size: 20px;    
+    margin: 2px 5px 0 0;
+    color:white;
 }
 
 .wrapper {
