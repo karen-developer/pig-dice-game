@@ -53,6 +53,7 @@ hr {
 
 .mysite {
     color:white;
+    font-size: 20px;
     text-decoration: none;
     transition: transform 0.3s ease-out;
 }
@@ -63,12 +64,12 @@ hr {
 
 .mysite i {
     color: white;
-    font-size: 20px;
-    margin: 0 -1px 0 0;
+    font-size: 22px;
+    margin: 3px -1px 0 0;
 }
 
 .karen {
-    color: #eba1a1;
+    color:  #f7b5b5;
 }
 
 .wrapper {
